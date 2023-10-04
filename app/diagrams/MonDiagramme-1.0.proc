@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_K27IcGKPEe6SUplaisCSHQ" name="MonDiagramme" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_K27IcWKPEe6SUplaisCSHQ" name="Département MSSC">
-      <elements xmi:type="process:Lane" xmi:id="_K27IcmKPEe6SUplaisCSHQ" name="Etudiant" actor="_K27vj2KPEe6SUplaisCSHQ">
+      <elements xmi:type="process:Lane" xmi:id="_K27IcmKPEe6SUplaisCSHQ" name="Etudiant" actor="_-voTkGKbEe6Gj5K04qXrvQ">
         <elements xmi:type="process:StartEvent" xmi:id="_K27Ic2KPEe6SUplaisCSHQ" name="Démarrer1" outgoing="_K27vjGKPEe6SUplaisCSHQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_K27IdGKPEe6SUplaisCSHQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_K27IdWKPEe6SUplaisCSHQ" name="" content="" returnTypeFixed="true"/>
@@ -24,7 +24,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_K27vh2KPEe6SUplaisCSHQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_6_CMQGKaEe6Gj5K04qXrvQ" name="Secrétariat"/>
+      <elements xmi:type="process:Lane" xmi:id="_6_CMQGKaEe6Gj5K04qXrvQ" name="Secrétariat" actor="_VmvOMGKcEe6Gj5K04qXrvQ"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_K27viGKPEe6SUplaisCSHQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_K27viWKPEe6SUplaisCSHQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -36,6 +36,8 @@
         <condition xmi:type="expression:Expression" xmi:id="_K27vjmKPEe6SUplaisCSHQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_K27vj2KPEe6SUplaisCSHQ" documentation="Ceci est un exemple d'acteur associé à tous les utilisateurs d'ACME" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_-voTkGKbEe6Gj5K04qXrvQ" name="Etudiant"/>
+      <actors xmi:type="process:Actor" xmi:id="_VmvOMGKcEe6Gj5K04qXrvQ" name="Secrétaire"/>
       <contract xmi:type="process:Contract" xmi:id="_K27vkGKPEe6SUplaisCSHQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_K27vkWKPEe6SUplaisCSHQ">
         <name xmi:type="expression:Expression" xmi:id="_K27vkmKPEe6SUplaisCSHQ" content="" returnTypeFixed="true"/>
@@ -60,13 +62,15 @@
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_7c8QQGKaEe6Gj5K04qXrvQ" name="Relation internationale">
       <elements xmi:type="process:Lane" xmi:id="_8ExFQGKaEe6Gj5K04qXrvQ" name="Management"/>
-      <elements xmi:type="process:Lane" xmi:id="_8XGycGKaEe6Gj5K04qXrvQ" name="Comptabilité"/>
+      <elements xmi:type="process:Lane" xmi:id="_8XGycGKaEe6Gj5K04qXrvQ" name="Comptabilité" actor="_UZC2kGKdEe6Gj5K04qXrvQ"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_7e-3r2KaEe6Gj5K04qXrvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_7e-3sGKaEe6Gj5K04qXrvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_7e-3sWKaEe6Gj5K04qXrvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_7e-3smKaEe6Gj5K04qXrvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
+      <actors xmi:type="process:Actor" xmi:id="_oAWCwGKcEe6Gj5K04qXrvQ" name="Directeur"/>
+      <actors xmi:type="process:Actor" xmi:id="_UZC2kGKdEe6Gj5K04qXrvQ" name="Comptable"/>
       <contract xmi:type="process:Contract" xmi:id="_7e-3s2KaEe6Gj5K04qXrvQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_7e-3oGKaEe6Gj5K04qXrvQ">
         <name xmi:type="expression:Expression" xmi:id="_7e-3oWKaEe6Gj5K04qXrvQ" content="" returnTypeFixed="true"/>
