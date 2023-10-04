@@ -38,21 +38,21 @@
       <customUserInfoValues/>
     </user>
     <user userName="Alexander Duchemin ">
-      <firstName>Alexander </firstName>
-      <lastName>Duchemin </lastName>
+      <firstName>Alexander</firstName>
+      <lastName>Duchemin</lastName>
       <title>Mr</title>
-      <jobTitle>Secrétaire </jobTitle>
+      <jobTitle>Secrétaire</jobTitle>
       <personalData/>
       <professionalData/>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Franck DUbois ">
+    <user userName="Franck Dubois ">
       <firstName>Franck</firstName>
       <lastName>Dubois </lastName>
       <title>Mr</title>
       <jobTitle>Comptable</jobTitle>
-      <manager>Carol Laforêt </manager>
+      <manager>Carole Laforêt </manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">1234</password>
@@ -74,13 +74,13 @@
       <displayName>Etudiant</displayName>
       <description></description>
     </role>
-    <role name="Secr">
+    <role name="Secrétaire">
       <displayName>Secrétaire</displayName>
     </role>
-    <role name="Compta">
+    <role name="Comptable">
       <displayName>Comptable</displayName>
     </role>
-    <role name="Dir">
+    <role name="Directeur">
       <displayName>Directeur</displayName>
     </role>
   </roles>
@@ -165,19 +165,19 @@
     </membership>
     <membership>
       <userName>Alexander Duchemin </userName>
-      <roleName>Secr</roleName>
+      <roleName>Secrétaire</roleName>
       <groupName>Secr</groupName>
       <groupParentPath>/UNI/Dep_MSSC</groupParentPath>
     </membership>
     <membership>
-      <userName>Franck DUbois </userName>
-      <roleName>Compta</roleName>
+      <userName>Franck Dubois </userName>
+      <roleName>Comptable</roleName>
       <groupName>Compta</groupName>
       <groupParentPath>/UNI/Rel_Int</groupParentPath>
     </membership>
     <membership>
       <userName>Carol Laforêt </userName>
-      <roleName>Dir</roleName>
+      <roleName>Directeur</roleName>
       <groupName>Manag</groupName>
       <groupParentPath>/UNI/Rel_Int</groupParentPath>
     </membership>
