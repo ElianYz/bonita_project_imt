@@ -1,0 +1,8 @@
+== Migration notes (4 octobre 2023 à 11:43:48 CEST)
+
+=== Updates
+
+* `bonita.runtime.version` has been updated from `7.15.0` to `8.0.0`.
+* `bonita-project-maven-plugin.version` has been updated from `0.0.6` to `0.1.0`.
+* The project layout has been changed in favor of a multi modules maven project. It means that files location inside the project have changed.  It is a technical change and will not impact the design usage in Bonita Studio.New maven modules and their respective `pom.xml` files are *reserved for internal Studio use*.
+
