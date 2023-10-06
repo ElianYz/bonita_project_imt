@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="8.0.0">
     <businessObjects>
-        <businessObject qualifiedName="com.company.model.BusinessObject">
+        <businessObject qualifiedName="com.company.model.FormObject">
             <fields>
-                <field type="STRING" length="255" name="identifiantEtudiant" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="prenom" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="nom" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="dateNaissance" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="adresse" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="nationnalite" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="motifSejour" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="dateDebut" nullable="true" collection="false"/>
-                <field type="LOCALDATE" length="255" name="dateFin" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="etatDemande" nullable="true" collection="false"/>
-                <field type="TEXT" length="255" name="commentaires" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="test" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="motifSejour" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="moisRetour" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="moisDepart" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="commentaires" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mail" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="specialite" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="duree" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="secteurGeographique" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="paysSejour" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="villeSejour" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="universiteSejour" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="departementSejour" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="specialiteSejour" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="accept" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
