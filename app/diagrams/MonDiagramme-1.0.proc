@@ -200,6 +200,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_xlS44WKeEe6Gj5K04qXrvQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_xlS44GKeEe6Gj5K04qXrvQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_xlS44mKeEe6Gj5K04qXrvQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_q-0YMmQfEe6LY9FT6NOGNw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_q-0YM2QfEe6LY9FT6NOGNw" name="formulaire" content="formulaire" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_q-0YNGQfEe6LY9FT6NOGNw" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_q-0YNWQfEe6LY9FT6NOGNw" name="formulaireInput.accept" content="formulaireInput?.accept" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_q-0YNmQfEe6LY9FT6NOGNw" name="formulaireInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_q-0YN2QfEe6LY9FT6NOGNw" type="JAVA_METHOD" expression="setAccept">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_xlS442KeEe6Gj5K04qXrvQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_xlS45GKeEe6Gj5K04qXrvQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_xlS45WKeEe6Gj5K04qXrvQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -209,9 +220,13 @@
             <condition xmi:type="expression:Expression" xmi:id="__oCa4GKeEe6Gj5K04qXrvQ" name="00:01:00" content="60000L" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
           </BoundaryIntermediateEvents>
           <formMapping xmi:type="process:FormMapping" xmi:id="_xlS46WKeEe6Gj5K04qXrvQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_3qOwUGQeEe6w1fQx6ik-6g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_zxnDgGQfEe6LY9FT6NOGNw" name="FormulaireControle" content="df9b8c2f-e776-4c93-9238-81b8c7d1af40" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_xlS46GKeEe6Gj5K04qXrvQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_xlS46GKeEe6Gj5K04qXrvQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_q-0YMGQfEe6LY9FT6NOGNw" name="formulaireInput" type="COMPLEX" dataReference="formulaire" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_q-0YMWQfEe6LY9FT6NOGNw" name="accept" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xlS462KeEe6Gj5K04qXrvQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_5cFJwGKwEe6Jdd_cFX0v8A" name="Porte1" outgoing="_GtfgAGKyEe6Jdd_cFX0v8A _m8tKcGQbEe6w1fQx6ik-6g" incoming="_TYdMMGKxEe6Jdd_cFX0v8A">
