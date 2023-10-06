@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "df9b8c2f-e776-4c93-9238-81b8c7d1af40",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696580859239,
+  "lastUpdate" : 1696581396635,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1103,7 +1103,7 @@
                         },
                         "targetUrlOnSuccess" : {
                           "type" : "interpolation",
-                          "value" : "/bonita"
+                          "value" : ""
                         },
                         "collectionToModify" : {
                           "type" : "variable"
@@ -1195,7 +1195,7 @@
                         },
                         "targetUrlOnSuccess" : {
                           "type" : "interpolation",
-                          "value" : "/bonita"
+                          "value" : ""
                         },
                         "collectionToModify" : {
                           "type" : "variable"
