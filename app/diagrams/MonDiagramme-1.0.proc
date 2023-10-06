@@ -438,14 +438,14 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_QZNXEWQVEe6LY9FT6NOGNw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_K27viGKPEe6SUplaisCSHQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_brrOMGQzEe6h_5UvdM1dDg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Ve6gQGRPEe6RotombNdUsw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_K27vimKPEe6SUplaisCSHQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_K27vi2KPEe6SUplaisCSHQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_K27vjGKPEe6SUplaisCSHQ" target="_K27Id2KPEe6SUplaisCSHQ" source="_K27Ic2KPEe6SUplaisCSHQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_K27vjWKPEe6SUplaisCSHQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_K27vjmKPEe6SUplaisCSHQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_K27vjmKPEe6SUplaisCSHQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_2ytY8GKeEe6Gj5K04qXrvQ" target="_xlSR0GKeEe6Gj5K04qXrvQ" source="_K27Id2KPEe6SUplaisCSHQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_2yuAAGKeEe6Gj5K04qXrvQ"/>
@@ -471,8 +471,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_GeCTIGQwEe6h_5UvdM1dDg" target="_PJF-wGQwEe6h_5UvdM1dDg" source="_5cFJwGKwEe6Jdd_cFX0v8A">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_GeC6MGQwEe6h_5UvdM1dDg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_GeC6MWQwEe6h_5UvdM1dDg" name="!isAccept" content="formulaire.accept==false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JycDIGQwEe6h_5UvdM1dDg" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+        <condition xmi:type="expression:Expression" xmi:id="_GeC6MWQwEe6h_5UvdM1dDg" name="isAccept" content="formulaire.accept==true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Nk5-cGRMEe6RotombNdUsw" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
         </condition>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_-voTkGKbEe6Gj5K04qXrvQ" name="Etudiant" initiator="true"/>
@@ -501,117 +501,18 @@
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_7c8QQGKaEe6Gj5K04qXrvQ" name="Relation internationale">
       <elements xmi:type="process:Lane" xmi:id="_8ExFQGKaEe6Gj5K04qXrvQ" name="Management" actor="_oAWCwGKcEe6Gj5K04qXrvQ">
-        <elements xmi:type="process:Task" xmi:id="_deYzAGK0Ee6hcJAWPaGpNw" name="Contrôle les informations" outgoing="_kOzW4GK0Ee6hcJAWPaGpNw" incoming="_Sj8VAGQwEe6h_5UvdM1dDg" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_deYzAGK0Ee6hcJAWPaGpNw" name="Contrôle les informations" outgoing="_kOzW4GK0Ee6hcJAWPaGpNw" incoming="_Sj8VAGQwEe6h_5UvdM1dDg" actor="_RBnyYGRLEe6RotombNdUsw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_deb2UWK0Ee6hcJAWPaGpNw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_deb2UGK0Ee6hcJAWPaGpNw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_deb2UmK0Ee6hcJAWPaGpNw" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HO2QyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HPGQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HPWQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+          <operations xmi:type="expression:Operation" xmi:id="_TYMrYmRPEe6RotombNdUsw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_TYMrY2RPEe6RotombNdUsw" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TYMrZGRPEe6RotombNdUsw" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HPmQyEe6h_5UvdM1dDg" name="formulaireRIInput.moisRetour" content="formulaireRIInput?.moisRetour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HP2QyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_TYMrZWRPEe6RotombNdUsw" name="formulaireRIInput.accept" content="formulaireRIInput?.accept" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_TYMrZmRPEe6RotombNdUsw" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HQGQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMoisRetour">
-              <inputTypes>java.time.LocalDate</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HQWQyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HQmQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HQ2QyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HRGQyEe6h_5UvdM1dDg" name="formulaireRIInput.moisDepart" content="formulaireRIInput?.moisDepart" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.LocalDate">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HRWQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HRmQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMoisDepart">
-              <inputTypes>java.time.LocalDate</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HR2QyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HSGQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HSWQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HSmQyEe6h_5UvdM1dDg" name="formulaireRIInput.duree" content="formulaireRIInput?.duree" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HS2QyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HTGQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setDuree">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HTWQyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HTmQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HT2QyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HUGQyEe6h_5UvdM1dDg" name="formulaireRIInput.secteurGeographique" content="formulaireRIInput?.secteurGeographique" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HUWQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HUmQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setSecteurGeographique">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HU2QyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HVGQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HVWQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HVmQyEe6h_5UvdM1dDg" name="formulaireRIInput.paysSejour" content="formulaireRIInput?.paysSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HV2QyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HWGQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setPaysSejour">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HWWQyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HWmQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HW2QyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HXGQyEe6h_5UvdM1dDg" name="formulaireRIInput.villeSejour" content="formulaireRIInput?.villeSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HXWQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HXmQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setVilleSejour">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HX2QyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HYGQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HYWQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HYmQyEe6h_5UvdM1dDg" name="formulaireRIInput.universiteSejour" content="formulaireRIInput?.universiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HY2QyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HZGQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setUniversiteSejour">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HZWQyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HZmQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HZ2QyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HaGQyEe6h_5UvdM1dDg" name="formulaireRIInput.departementSejour" content="formulaireRIInput?.departementSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HaWQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HamQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setDepartementSejour">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3Ha2QyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HbGQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3HbWQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HbmQyEe6h_5UvdM1dDg" name="formulaireRIInput.specialiteSejour" content="formulaireRIInput?.specialiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3Hb2QyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HcGQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setSpecialiteSejour">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_pC3HcWQyEe6h_5UvdM1dDg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_pC3HcmQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_pC3Hc2QyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pC3HdGQyEe6h_5UvdM1dDg" name="formulaireRIInput.accept" content="formulaireRIInput?.accept" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_pC3HdWQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_pC3HdmQyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setAccept">
+            <operator xmi:type="expression:Operator" xmi:id="_TYMrZ2RPEe6RotombNdUsw" type="JAVA_METHOD" expression="setAccept">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
@@ -624,17 +525,8 @@
             <targetForm xmi:type="expression:Expression" xmi:id="__Bl6QGQwEe6h_5UvdM1dDg" name="verificationSejour" content="178f7025-628a-4e28-9d16-ceba1bece9e4" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_deb2WGK0Ee6hcJAWPaGpNw">
-            <inputs xmi:type="process:ContractInput" xmi:id="_pC3HMGQyEe6h_5UvdM1dDg" name="formulaireRIInput" type="COMPLEX" dataReference="formulaireRI" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HMWQyEe6h_5UvdM1dDg" name="moisRetour" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HMmQyEe6h_5UvdM1dDg" name="moisDepart" type="LOCALDATE" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HM2QyEe6h_5UvdM1dDg" name="duree" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HNGQyEe6h_5UvdM1dDg" name="secteurGeographique" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HNWQyEe6h_5UvdM1dDg" name="paysSejour" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HNmQyEe6h_5UvdM1dDg" name="villeSejour" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HN2QyEe6h_5UvdM1dDg" name="universiteSejour" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HOGQyEe6h_5UvdM1dDg" name="departementSejour" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HOWQyEe6h_5UvdM1dDg" name="specialiteSejour" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_pC3HOmQyEe6h_5UvdM1dDg" name="accept" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_TYMrYGRPEe6RotombNdUsw" name="formulaireRIInput" type="COMPLEX" dataReference="formulaireRI" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_TYMrYWRPEe6RotombNdUsw" name="accept" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_deb2W2K0Ee6hcJAWPaGpNw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -967,115 +859,147 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_RzOpw2QwEe6h_5UvdM1dDg" name="" content="" returnTypeFixed="true"/>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-AVUGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-AVUWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ttId8GQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8lvKwGRPEe6RotombNdUsw" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-AVUmQyEe6h_5UvdM1dDg" name="messPrenom" content="messPrenom" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-AVU2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-AVU2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setPrenom">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-A8YGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-A8YWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ugvFIGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-A8YmQyEe6h_5UvdM1dDg" name="messNom" content="messNom" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-A8Y2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-A8Y2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setNom">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-A8ZGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-A8ZWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_u1ChMGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-A8ZmQyEe6h_5UvdM1dDg" name="messNationnalite" content="messNationnalite" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-A8Z2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-A8Z2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setNationnalite">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-BjcGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-BjcWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vPDjsGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-BjcmQyEe6h_5UvdM1dDg" name="messMotifSejour" content="messMotifSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Bjc2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Bjc2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMotifSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-BjdGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-BjdWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vkg2UGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-BjdmQyEe6h_5UvdM1dDg" name="messMoisRetour" content="messMoisRetour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Bjd2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Bjd2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMoisRetour">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-CKgGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-CKgWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_v8c1MGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-CKgmQyEe6h_5UvdM1dDg" name="messMoisDepart" content="messMoisDepart" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-CKg2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-CKg2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMoisDepart">
+              <inputTypes>java.time.LocalDate</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-CxkGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-CxkWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wUb3YGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-CxkmQyEe6h_5UvdM1dDg" name="messCommentaires" content="messCommentaires" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Cxk2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Cxk2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setCommentaires">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-CxlGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-CxlWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_wvc_cGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-CxlmQyEe6h_5UvdM1dDg" name="messMail" content="messMail" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Cxl2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Cxl2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setMail">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-DYoGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-DYoWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xFYzMGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-DYomQyEe6h_5UvdM1dDg" name="messSpecialite" content="messSpecialite" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-DYo2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-DYo2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setSpecialite">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-DYpGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-DYpWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xfJ-EGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-DYpmQyEe6h_5UvdM1dDg" name="messDuree" content="messDuree" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-DYp2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-DYp2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setDuree">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-D_sGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-D_sWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_x2lmoGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-D_smQyEe6h_5UvdM1dDg" name="messSecteurGeographique" content="messSecteurGeographique" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-D_s2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-D_s2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setSecteurGeographique">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-EmwGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-EmwWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_yax40GQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-EmwmQyEe6h_5UvdM1dDg" name="messPaysSejour" content="messPaysSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Emw2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Emw2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setPaysSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-EmxGQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-EmxWQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zCagkGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-EmxmQyEe6h_5UvdM1dDg" name="messVilleSejour" content="messVilleSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-Emx2QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-Emx2QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setVilleSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-FN0GQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-FN0WQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zWtVkGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-FN0mQyEe6h_5UvdM1dDg" name="messUniversiteSejour" content="messUniversiteSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-FN02QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-FN02QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setUniversiteSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-F04GQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-F04WQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_z10TcGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-F04mQyEe6h_5UvdM1dDg" name="messDepartementSejour" content="messDepartementSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-F042QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-F042QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setDepartementSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
           <messageContent xmi:type="expression:Operation" xmi:id="_M-F05GQyEe6h_5UvdM1dDg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_M-F05WQyEe6h_5UvdM1dDg" name="formulaireRI" content="formulaireRI" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_0QnZEGQyEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_M-F05mQyEe6h_5UvdM1dDg" name="messSpecialiteSejour" content="messSpecialiteSejour" type="MESSAGE_ID_TYPE"/>
-            <operator xmi:type="expression:Operator" xmi:id="_M-F052QyEe6h_5UvdM1dDg" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_M-F052QyEe6h_5UvdM1dDg" type="JAVA_METHOD" expression="setSpecialiteSejour">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </messageContent>
         </elements>
       </elements>
@@ -1084,14 +1008,14 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_evG_cWQyEe6h_5UvdM1dDg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_7e-3r2KaEe6Gj5K04qXrvQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_bvJY8mQzEe6h_5UvdM1dDg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_VobBkGRPEe6RotombNdUsw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_7e-3sWKaEe6Gj5K04qXrvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_7e-3smKaEe6Gj5K04qXrvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_kOzW4GK0Ee6hcJAWPaGpNw" target="_jM4m4GK0Ee6hcJAWPaGpNw" source="_deYzAGK0Ee6hcJAWPaGpNw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_kOz98GK0Ee6hcJAWPaGpNw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_kOz98WK0Ee6hcJAWPaGpNw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_kOz98WK0Ee6hcJAWPaGpNw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_FskuMGK1Ee6hcJAWPaGpNw" target="_A0eW0GK1Ee6hcJAWPaGpNw" source="_jM4m4GK0Ee6hcJAWPaGpNw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_FskuMWK1Ee6hcJAWPaGpNw"/>
@@ -1141,8 +1065,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Sj8VAWQwEe6h_5UvdM1dDg"/>
         <condition xmi:type="expression:Expression" xmi:id="_Sj8VAmQwEe6h_5UvdM1dDg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_oAWCwGKcEe6Gj5K04qXrvQ" name="Directeur" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_oAWCwGKcEe6Gj5K04qXrvQ" name="Directeur"/>
       <actors xmi:type="process:Actor" xmi:id="_UZC2kGKdEe6Gj5K04qXrvQ" name="Comptable"/>
+      <actors xmi:type="process:Actor" xmi:id="_RBnyYGRLEe6RotombNdUsw" name="Etudiant"/>
       <contract xmi:type="process:Contract" xmi:id="_7e-3s2KaEe6Gj5K04qXrvQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_7e-3oGKaEe6Gj5K04qXrvQ">
         <name xmi:type="expression:Expression" xmi:id="_7e-3oWKaEe6Gj5K04qXrvQ" content="" returnTypeFixed="true"/>

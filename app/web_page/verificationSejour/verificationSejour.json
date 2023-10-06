@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "178f7025-628a-4e28-9d16-ceba1bece9e4",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696586884376,
+  "lastUpdate" : 1696599688728,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -1019,12 +1019,12 @@
                           "value" : ""
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!formulaireRI.accept"
+                          "type" : "constant",
+                          "value" : false
                         },
                         "disabled" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
