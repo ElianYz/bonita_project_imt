@@ -1,0 +1,1345 @@
+{
+  "id" : "verificationSejour",
+  "name" : "verificationSejour",
+  "type" : "form",
+  "uuid" : "178f7025-628a-4e28-9d16-ceba1bece9e4",
+  "modelVersion" : "2.4",
+  "lastUpdate" : 1696586884376,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "0af048bb-6247-4b5e-8627-fe4d35937f44",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Verification RI séjour"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "939882d5-76f5-498b-944b-f6ef794643f8",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "8f290b9f-a23f-4829-a03a-80bd19abb098",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "4e03f15f-7e94-4ea9-b44f-51716fedea51",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "7294a967-b48e-46c3-8a26-38fc6a767d72",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Formulaire R I"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "a862bdd9-350e-4a5c-a68c-5375c8aec12a",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "765c91f0-31e0-4cb1-9f2e-ff452ef62787",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Mois Retour"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.moisRetour"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "aab04f04-aa16-42eb-83f4-7e5255343e92",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Mois Depart"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.moisDepart"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "f5dc070b-5d24-4482-bb59-3d76afbea448",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Duree"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.duree"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "cd484fe7-852d-4307-a1e6-5bffb9f588b0",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Secteur Geographique"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.secteurGeographique"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "8afdd3c2-72ee-4586-b494-7e84e4a3ac72",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Pays Sejour"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.paysSejour"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "ffc2010c-8e51-4200-9250-5651545c2a8e",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ville Sejour"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.villeSejour"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "c576ee68-793c-4afd-930c-25ca707d128b",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Universite Sejour"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.universiteSejour"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "b8ad5c62-35fa-4a72-b21b-06202442a039",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Departement Sejour"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.departementSejour"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "f063c338-3197-4ad4-a1a6-de41f2d4c9fd",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Specialite Sejour"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formulaireRI.specialiteSejour"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "db717422-8e35-457d-b822-0dd6ab312f31",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!formulaireRI.accept"
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Accept"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "center"
+                        },
+                        "buttonStyle" : {
+                          "type" : "constant",
+                          "value" : "success"
+                        },
+                        "action" : {
+                          "type" : "constant",
+                          "value" : "Submit task"
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataToSend" : {
+                          "type" : "expression",
+                          "value" : "formOutput"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable",
+                          "value" : "formInput.formulaireRIInput.accept"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "targetUrlOnSuccess" : {
+                          "type" : "interpolation"
+                        },
+                        "collectionToModify" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "collectionPosition" : {
+                          "type" : "constant",
+                          "value" : "Last"
+                        },
+                        "valueToAdd" : {
+                          "type" : "constant"
+                        },
+                        "removeItem" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "5217fd43-53ff-432e-b0dd-c0cba17ae40a",
+                      "hasValidationError" : false,
+                      "id" : "pbButton"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Decline"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "center"
+                        },
+                        "buttonStyle" : {
+                          "type" : "constant",
+                          "value" : "danger"
+                        },
+                        "action" : {
+                          "type" : "constant",
+                          "value" : "Submit task"
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataToSend" : {
+                          "type" : "expression",
+                          "value" : "formOutputFalse"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable",
+                          "value" : "formInputFalse.formulaireRIInput.accept"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "targetUrlOnSuccess" : {
+                          "type" : "interpolation"
+                        },
+                        "collectionToModify" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "collectionPosition" : {
+                          "type" : "constant",
+                          "value" : "Last"
+                        },
+                        "valueToAdd" : {
+                          "type" : "constant"
+                        },
+                        "removeItem" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "04130a64-808c-4b70-b1b8-c40b17685d9f",
+                      "hasValidationError" : false,
+                      "id" : "pbButton"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "da16e0a0-7d27-4de6-8015-81b8b490d90f",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "formulaireRI" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.formulaireRI_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\"formulaireRI\" : { \"accept\" : true }} "
+      ],
+      "exposed" : false
+    },
+    "formInputFalse" : {
+      "type" : "json",
+      "value" : [
+        "{\"formulaireRI\" : { \"accept\" : false }} "
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {formulaireRIInput: \r",
+        "$data.formInput.formulaireRIInput}"
+      ],
+      "exposed" : false
+    },
+    "formOutputFalse" : {
+      "type" : "expression",
+      "value" : [
+        "return {formulaireRIInput: \r",
+        "$data.formInputFalse.formulaireRIInput} "
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "9d50de12-c6e6-4577-b5bb-70a5b0bb2834",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "01d87041-33ad-42da-85e7-fec5c8b35326",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

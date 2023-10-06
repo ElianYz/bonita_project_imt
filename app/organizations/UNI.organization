@@ -43,7 +43,9 @@
       <title>Mr</title>
       <jobTitle>Secrétaire</jobTitle>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>alexander.duchemin@entreprise.com</email>
+      </professionalData>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
