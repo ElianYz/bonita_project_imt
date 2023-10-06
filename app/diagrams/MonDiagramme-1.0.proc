@@ -861,7 +861,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_FskuMGK1Ee6hcJAWPaGpNw" target="_A0eW0GK1Ee6hcJAWPaGpNw" source="_jM4m4GK0Ee6hcJAWPaGpNw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_FskuMWK1Ee6hcJAWPaGpNw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_FskuMmK1Ee6hcJAWPaGpNw" name="!isAccept" content="FormObject.accept==true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_FskuMmK1Ee6hcJAWPaGpNw" name="!isAccept" content="formulaireRI.accept==true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Umvy4GQzEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_JKcjQGK1Ee6hcJAWPaGpNw" target="_HNWkcGK1Ee6hcJAWPaGpNw" source="_A0eW0GK1Ee6hcJAWPaGpNw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_JKcjQWK1Ee6hcJAWPaGpNw"/>
@@ -877,7 +879,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_q4jU8GQbEe6w1fQx6ik-6g" target="_o9SiIGQbEe6w1fQx6ik-6g" source="_jM4m4GK0Ee6hcJAWPaGpNw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_q4jU8WQbEe6w1fQx6ik-6g"/>
-        <condition xmi:type="expression:Expression" xmi:id="_q4jU8mQbEe6w1fQx6ik-6g" name="!isAccept" content="FormObject.accept==false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_q4jU8mQbEe6w1fQx6ik-6g" name="!isAccept" content="formulaireRI.accept==false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_S-T1cGQzEe6h_5UvdM1dDg" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_rjK_QGQbEe6w1fQx6ik-6g" target="_p06q0GK0Ee6hcJAWPaGpNw" source="_o9SiIGQbEe6w1fQx6ik-6g">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_rjLmUGQbEe6w1fQx6ik-6g"/>
