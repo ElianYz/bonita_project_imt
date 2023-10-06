@@ -27,7 +27,7 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
-    <user userName="Gemma Dupont">
+    <user userName="gemma.dupont">
       <firstName>Gemma</firstName>
       <lastName>Dupont</lastName>
       <title>Mme</title>
@@ -37,7 +37,7 @@
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Alexander Duchemin ">
+    <user userName="alexander.duchemin ">
       <firstName>Alexander</firstName>
       <lastName>Duchemin</lastName>
       <title>Mr</title>
@@ -49,7 +49,7 @@
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Franck Dubois ">
+    <user userName="franck.dubois ">
       <firstName>Franck</firstName>
       <lastName>Dubois </lastName>
       <title>Mr</title>
@@ -60,11 +60,11 @@
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Carol Laforêt ">
+    <user userName="carol.laforet ">
       <firstName>Carol</firstName>
-      <lastName>Laforêt </lastName>
+      <lastName>Laforêt</lastName>
       <title>Mme</title>
-      <jobTitle>Directeur </jobTitle>
+      <jobTitle>Directeur</jobTitle>
       <personalData/>
       <professionalData/>
       <password encrypted="false">1234</password>
@@ -160,25 +160,25 @@
       <groupName>UNI</groupName>
     </membership>
     <membership>
-      <userName>Gemma Dupont</userName>
+      <userName>gemma.dupont</userName>
       <roleName>Etudiant</roleName>
       <groupName>Etu</groupName>
       <groupParentPath>/UNI/Dep_MSSC</groupParentPath>
     </membership>
     <membership>
-      <userName>Alexander Duchemin </userName>
+      <userName>alexander.duchemin </userName>
       <roleName>Secrétaire</roleName>
       <groupName>Secr</groupName>
       <groupParentPath>/UNI/Dep_MSSC</groupParentPath>
     </membership>
     <membership>
-      <userName>Franck Dubois </userName>
+      <userName>franck.dubois </userName>
       <roleName>Comptable</roleName>
       <groupName>Compta</groupName>
       <groupParentPath>/UNI/Rel_Int</groupParentPath>
     </membership>
     <membership>
-      <userName>Carol Laforêt </userName>
+      <userName>carol.laforet </userName>
       <roleName>Directeur</roleName>
       <groupName>Manag</groupName>
       <groupParentPath>/UNI/Rel_Int</groupParentPath>
