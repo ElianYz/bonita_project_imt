@@ -329,7 +329,7 @@
       </searchIndexes>
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_7c8QQGKaEe6Gj5K04qXrvQ" name="Relation internationale">
-      <elements xmi:type="process:Lane" xmi:id="_8ExFQGKaEe6Gj5K04qXrvQ" name="Management">
+      <elements xmi:type="process:Lane" xmi:id="_8ExFQGKaEe6Gj5K04qXrvQ" name="Management" actor="_oAWCwGKcEe6Gj5K04qXrvQ">
         <elements xmi:type="process:StartEvent" xmi:id="_jaFnUGKyEe6Jdd_cFX0v8A" name="Démarrer2" outgoing="_gh1V4GK0Ee6hcJAWPaGpNw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_jaFnUmKyEe6Jdd_cFX0v8A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_jaFnUWKyEe6Jdd_cFX0v8A" name="" content="" returnTypeFixed="true"/>
