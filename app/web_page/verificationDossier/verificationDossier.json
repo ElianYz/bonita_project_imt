@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "af0ea0be-e3b9-4ed3-81f4-d59b94d5daed",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696594972799,
+  "lastUpdate" : 1696841508779,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -605,7 +605,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Submit"
+                          "value" : "Decline"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -777,14 +777,14 @@
     "formInput" : {
       "type" : "json",
       "value" : [
-        "{\"formulaireRI\" : { \"accept\" : true }}"
+        "{\"formulaireRIInput\" : { \"accept\" : true }}"
       ],
       "exposed" : false
     },
     "formInputFalse" : {
       "type" : "json",
       "value" : [
-        "{\"formulaireRI\" : { \"accept\" : false }}"
+        "{\"formulaireRIInput\" : { \"accept\" : false }}"
       ],
       "exposed" : false
     },
