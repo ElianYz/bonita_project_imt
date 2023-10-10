@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "187326d9-db27-4df2-99de-1e0cea12b95c",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696941272642,
+  "lastUpdate" : 1696944739313,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -778,7 +778,7 @@
                   },
                   "dataFromError" : {
                     "type" : "variable",
-                    "value" : "formOutput._submitError"
+                    "value" : ""
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -793,7 +793,7 @@
                   },
                   "targetUrlOnSuccess" : {
                     "type" : "interpolation",
-                    "value" : "/bonita"
+                    "value" : ""
                   },
                   "action" : {
                     "type" : "constant",
@@ -806,8 +806,8 @@
                     "type" : "expression"
                   },
                   "disabled" : {
-                    "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "type" : "constant",
+                    "value" : false
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -828,7 +828,8 @@
                     "type" : "variable"
                   },
                   "dataFromSuccess" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : "formInput.formulaireRIInput.accept"
                   },
                   "closeOnSuccess" : {
                     "type" : "constant",
@@ -896,10 +897,12 @@
                     "type" : "variable"
                   },
                   "dataToSend" : {
-                    "type" : "constant"
+                    "type" : "constant",
+                    "value" : "formOutputfalse"
                   },
                   "dataFromSuccess" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : "formInputFalse.formulaireRIInput.accept"
                   },
                   "closeOnSuccess" : {
                     "type" : "constant",
@@ -1052,6 +1055,34 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "formInputFalse" : {
+      "type" : "json",
+      "value" : [
+        "{\"formulaireInput\" : { \"accept\" : false }}"
+      ],
+      "exposed" : false
+    },
+    "formOutputfalse" : {
+      "type" : "expression",
+      "value" : [
+        "return {formulaireInput: $data.formInputFalse.formulaireInput}"
+      ],
+      "exposed" : false
+    },
+    "formulaireRI" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.formulaireRI_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "InfoCommande" : {
+      "type" : "url",
+      "value" : [
+        "..//{{context.formulaireRI_ref.link}}"
       ],
       "exposed" : false
     }

@@ -9,7 +9,7 @@
       <jobTitle>Chief Executive Officer</jobTitle>
       <personalData/>
       <professionalData>
-        <email>william.jobs@acme.com</email>
+        <email>william.jobs@gmail.com</email>
         <phoneNumber>484-302-5000</phoneNumber>
         <faxNumber>484-302-0000</faxNumber>
         <building>70</building>
@@ -33,7 +33,9 @@
       <title>Mme</title>
       <jobTitle>Etudiante </jobTitle>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>gemma.dupont@gmail.com</email>
+      </professionalData>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
@@ -44,7 +46,7 @@
       <jobTitle>Secrétaire</jobTitle>
       <personalData/>
       <professionalData>
-        <email>alexander.duchemin@entreprise.com</email>
+        <email>alexander.duchemin@gmail.com</email>
       </professionalData>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
@@ -56,7 +58,9 @@
       <jobTitle>Comptable</jobTitle>
       <manager>Carole Laforêt </manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>franck.dubois@gmail.com</email>
+      </professionalData>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>
@@ -66,7 +70,9 @@
       <title>Mme</title>
       <jobTitle>Directeur</jobTitle>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>carol.laforet@gmail.com</email>
+      </professionalData>
       <password encrypted="false">1234</password>
       <customUserInfoValues/>
     </user>

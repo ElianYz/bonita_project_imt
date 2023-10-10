@@ -413,80 +413,6 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_P3HeUWKvEe6Jdd_cFX0v8A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_P3HeUGKvEe6Jdd_cFX0v8A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_P3HeUmKvEe6Jdd_cFX0v8A" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_klY9sGQvEe6h_5UvdM1dDg" name="Traitement avec du retard" definitionId="email" event="ON_FINISH" definitionVersion="1.2.0">
-            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_klY9sWQvEe6h_5UvdM1dDg" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9smQvEe6h_5UvdM1dDg" key="smtpHost">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9s2QvEe6h_5UvdM1dDg" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9tGQvEe6h_5UvdM1dDg" key="smtpPort">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9tWQvEe6h_5UvdM1dDg" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9tmQvEe6h_5UvdM1dDg" key="sslSupport">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9t2QvEe6h_5UvdM1dDg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9uGQvEe6h_5UvdM1dDg" key="starttlsSupport">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9uWQvEe6h_5UvdM1dDg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9umQvEe6h_5UvdM1dDg" key="trustCertificate">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9u2QvEe6h_5UvdM1dDg" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9vGQvEe6h_5UvdM1dDg" key="userName">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9vWQvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9vmQvEe6h_5UvdM1dDg" key="password">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9v2QvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9wGQvEe6h_5UvdM1dDg" key="from">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9wWQvEe6h_5UvdM1dDg" name="alexander.duchemin@entreprise.com" content="alexander.duchemin@entreprise.com" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9wmQvEe6h_5UvdM1dDg" key="returnPath">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9w2QvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9xGQvEe6h_5UvdM1dDg" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9xWQvEe6h_5UvdM1dDg" name="to()" content="formulaire.mail" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.FormObject" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_klY9xmQvEe6h_5UvdM1dDg" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9x2QvEe6h_5UvdM1dDg" key="bcc">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9yGQvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9yWQvEe6h_5UvdM1dDg" key="cc">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9ymQvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9y2QvEe6h_5UvdM1dDg" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9zGQvEe6h_5UvdM1dDg" name="Dossier en cours de traitement" content="Dossier en cours de traitement" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9zWQvEe6h_5UvdM1dDg" key="html">
-                <expression xmi:type="expression:Expression" xmi:id="_klY9zmQvEe6h_5UvdM1dDg" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY9z2QvEe6h_5UvdM1dDg" key="message">
-                <expression xmi:type="expression:Expression" xmi:id="_klY90GQvEe6h_5UvdM1dDg" name="&lt;pattern-expression>" content="&lt;p>&lt;span style=&quot;font-size:12px&quot;>Bonjour ${formulaire.prenom} ${formulaire.nom}&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:12px&quot;>&lt;span style=&quot;font-family:Calibri&quot;>&lt;span style=&quot;font-family:Calibri&quot;>Votre dossier est bien en cours de traitement mais avec du retard.&lt;/span>&lt;/span>&lt;/span>&lt;/p>&#xA;&#xA;&lt;p>&lt;span style=&quot;font-size:12px&quot;>Le secr&amp;eacute;tariat&lt;/span>&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_klY90WQvEe6h_5UvdM1dDg" name="formulaire.prenom" content="formulaire.prenom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_klY90mQvEe6h_5UvdM1dDg" name="formulaire" content="formulaire" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_klY902QvEe6h_5UvdM1dDg" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-                    </referencedElements>
-                  </referencedElements>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_klY91GQvEe6h_5UvdM1dDg" name="formulaire.nom" content="formulaire.nom" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                    <referencedElements xmi:type="expression:Expression" xmi:id="_klY91WQvEe6h_5UvdM1dDg" name="formulaire" content="formulaire" type="TYPE_VARIABLE" returnType="com.company.model.FormObject">
-                      <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_klY91mQvEe6h_5UvdM1dDg" name="formulaire" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormObject"/>
-                    </referencedElements>
-                  </referencedElements>
-                </expression>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY912QvEe6h_5UvdM1dDg" key="headers">
-                <expression xmi:type="expression:TableExpression" xmi:id="_klY92GQvEe6h_5UvdM1dDg"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY92WQvEe6h_5UvdM1dDg" key="charset">
-                <expression xmi:type="expression:Expression" xmi:id="_klY92mQvEe6h_5UvdM1dDg" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY922QvEe6h_5UvdM1dDg" key="replyTo">
-                <expression xmi:type="expression:Expression" xmi:id="_klY93GQvEe6h_5UvdM1dDg" content="" returnTypeFixed="true"/>
-              </parameters>
-              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_klY93WQvEe6h_5UvdM1dDg" key="attachments">
-                <expression xmi:type="expression:ListExpression" xmi:id="_klY93mQvEe6h_5UvdM1dDg"/>
-              </parameters>
-            </configuration>
-          </connectors>
           <connectors xmi:type="process:Connector" xmi:id="_qerO0GasEe62-qpzyPSiDQ" name="mail1" definitionId="email" event="ON_ENTER" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_qerO0WasEe62-qpzyPSiDQ" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_qerO0masEe62-qpzyPSiDQ" key="smtpHost">
@@ -511,7 +437,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_qerO32asEe62-qpzyPSiDQ" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_qerO4GasEe62-qpzyPSiDQ" key="from">
-                <expression xmi:type="expression:Expression" xmi:id="_qerO4WasEe62-qpzyPSiDQ" name="alexander.duchemin@camarchepas.com" content="alexander.duchemin@camarchepas.com" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_qerO4WasEe62-qpzyPSiDQ" name="alexander.duchemin@gmail.com" content="alexander.duchemin@gmail.com" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_qerO4masEe62-qpzyPSiDQ" key="returnPath">
                 <expression xmi:type="expression:Expression" xmi:id="_qerO42asEe62-qpzyPSiDQ" content="" returnTypeFixed="true"/>
@@ -664,7 +590,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_CbOywGamEe6Yt9SWY4ijYA" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_K27viGKPEe6SUplaisCSHQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_YWN0kGdwEe6Zr591OyaAiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_-ePNIGdzEe6Zr591OyaAiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_K27vimKPEe6SUplaisCSHQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_K27vi2KPEe6SUplaisCSHQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1519,7 +1445,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_Lr_mkGZxEe6nVstEweJU5Q" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_7e-3r2KaEe6Gj5K04qXrvQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Y21OUGdwEe6Zr591OyaAiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_-ysaMGdzEe6Zr591OyaAiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_7e-3sWKaEe6Gj5K04qXrvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_7e-3smKaEe6Gj5K04qXrvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
