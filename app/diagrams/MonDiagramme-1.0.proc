@@ -590,7 +590,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_CbOywGamEe6Yt9SWY4ijYA" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_K27viGKPEe6SUplaisCSHQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="__siiIGgJEe6h1fAHCTTPiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_BXfWIGgMEe6h1fAHCTTPiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_K27vimKPEe6SUplaisCSHQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_K27vi2KPEe6SUplaisCSHQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -807,8 +807,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_EG1faWauEe62-qpzyPSiDQ" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EG1famauEe62-qpzyPSiDQ" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_EG1fa2auEe62-qpzyPSiDQ" name="subject()" content="&quot;Décision séjour international&quot; + formulaireRI.universiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_EG1fbGauEe62-qpzyPSiDQ" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormRIObject"/>
+                <expression xmi:type="expression:Expression" xmi:id="_EG1fa2auEe62-qpzyPSiDQ" name="subject()" content="&quot;Décision séjour international à &quot; + formulaireRI.universiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qPCXYGgMEe6h1fAHCTTPiw" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormRIObject"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_EG1fbWauEe62-qpzyPSiDQ" key="html">
@@ -893,8 +893,8 @@
                 <expression xmi:type="expression:Expression" xmi:id="_npnmpGdDEe64StzvrWkstw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_npnmpWdDEe64StzvrWkstw" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_npnmpmdDEe64StzvrWkstw" name="subject()" content="&quot;Décision séjour international&quot; + formulaireRI.universiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_npnmp2dDEe64StzvrWkstw" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormRIObject"/>
+                <expression xmi:type="expression:Expression" xmi:id="_npnmpmdDEe64StzvrWkstw" name="subject()" content="&quot;Décision séjour international à &quot; + formulaireRI.universiteSejour" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_smpvAGgMEe6h1fAHCTTPiw" name="formulaireRI" dataType="_K27vqGKPEe6SUplaisCSHQ" className="com.company.model.FormRIObject"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_npnmqGdDEe64StzvrWkstw" key="html">
@@ -1445,7 +1445,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_Lr_mkGZxEe6nVstEweJU5Q" name="" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_7e-3r2KaEe6Gj5K04qXrvQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_AKu6AGgKEe6h1fAHCTTPiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_ByLHAGgMEe6h1fAHCTTPiw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_7e-3sWKaEe6Gj5K04qXrvQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_7e-3smKaEe6Gj5K04qXrvQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
